@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  background-color: aqua;
+  color: darkred;
+  position: fixed;
+  top: 5px;
+  z-index: 1;
+  padding: 2px;
+}
+.img-container {
+  padding-top: 20px;
+  position: relative;
+  top: 50%;
+}
+.img-container img {
+  width: 300px;
+  height: auto;
+}
+.img-container h2 {
+  position: relative;
+  color: blueviolet;
+  font-size: 52px;
+  padding: 12px;
+}
+.cookie-notice {
+  position: fixed;
+  bottom: 0;
+  background-color: aqua;
+  padding: 10px;
+}
+.cookie-notice h3 {
+  display: inline;
+}
+.cookie-notice button {
+  display: inline;
+  width: 50px;
+}
