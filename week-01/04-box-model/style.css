@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+div {
+  background-color: aqua;
+}
+.img-1 {
+  background-color: crimson;
+  padding: 10px;
+  height: 400px;
+  width: auto;
+  border: 10px solid blue;
+  margin: 10px;
+}
+.img-2 {
+  background-color: darkred;
+  padding: 5px;
+  height: 400px;
+  width: auto;
+  border: 20px dotted green;
+  margin: 10px;
+}
