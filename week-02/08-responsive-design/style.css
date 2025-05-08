@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro-text {
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+header {
+  border: 2px solid blue;
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  header {
+    justify-content: start;
+    border-color: red;
+  }
+}
