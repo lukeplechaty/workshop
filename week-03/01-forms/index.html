@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>form: Structure ans Styling</h1>
+    <form id="main-form">
+      <fieldset>
+        <legend>Personal Data</legend>
+        <label for="name">Full Name: </label>
+        <input type="text" name="name" required />
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" required />
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Is this website to your liking?</legend>
+        <label for="like">
+          <input type="radio" name="like" value="yes" />Yes
+        </label>
+        <label for="like">
+          <input type="radio" name="like" value="no" />No
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What favourite of ice-cream is your flavour?</legend>
+        <label for="ice-cream-flavour">Ice-cream flavour: </label>
+        <select name="ice-cream-flavour">
+          <option value="" selected hidden>Pick a flavour</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="mint">Mint</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <form id="login">
+      <fieldset>
+        <label for="user">User Name: </label>
+        <input type="text" name="user" required />
+        <label for="password">Password: </label>
+        <input type="password" name="password" required />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
