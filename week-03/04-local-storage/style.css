@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+form button {
+  grid-column: 1 / -1;
+}
+#clear {
+  margin: 20px;
+}
