@@ -9,7 +9,7 @@ app.listen(8080, () => {
   console.log("server running on 8080");
 });
 
-const db = new pg.Pool({ connectionString: ProcessingInstruction.env.DB_URL });
+const db = new pg.Pool({ connectionString: process.env.DB_URL });
 
 // app.get("/", (request, response) => {});
 // app.post("/", (request, response) => {});
