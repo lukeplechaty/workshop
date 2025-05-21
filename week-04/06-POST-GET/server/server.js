@@ -26,7 +26,7 @@ app.get("/getMsg", async (req, res) => {
   const queryString = req.query.user;
   if (queryString) {
     dataJson = dataJson.filter((item) => {
-      return item.user_name.toLowerCase === queryString.toLowerCase;
+      return item.user_name.toLowerCase() === queryString.toLowerCase();
     });
   }
   res.json(dataJson);
