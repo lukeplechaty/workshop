@@ -1,0 +1,18 @@
+.thing2-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.thing2-h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: darkorange;
+}
+
+.thing2-p {
+  font-size: 18px;
+  font-weight: 400;
+  color: moccasin;
+}

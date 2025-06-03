@@ -1,5 +1,28 @@
-* {
+@import "tailwindcss";
+
+:root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
+}
+
+.app-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 2px blue solid;
+}
+
+.app-h1 {
+  font-size: 32px;
+  font-weight: 1000;
+  color: brown;
+}
+
+.app-p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
 }
