@@ -6,15 +6,22 @@ import NotFound from "./components/NotFound";
 import About from "./components/About";
 import User from "./components/User";
 import Message from "./components/Message";
+import UserForm from "./components/UserForm";
+import { useState } from "react";
 
 export default function App() {
+  const [username, setUsername] = useState(null);
   return (
     <>
-      <NavBar />
+      <NavBar username={username} />
       <Routes>
         <Route path={"*"} element={<NotFound />} />
         <Route path={"/"} element={<Home />} />
         <Route path={"/about"} element={<About />} />
+        <Route
+          path={"/userform"}
+          element={<UserForm setusername={setUsername} />}
+        />
         <Route path={"/user/:username"} element={<User />}>
           <Route path={"message"} element={<Message />} />
         </Route>
