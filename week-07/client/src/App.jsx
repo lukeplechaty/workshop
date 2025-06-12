@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
-import About from "./components/About";
+import Glass from "./components/Glass";
 import User from "./components/User";
 import Message from "./components/Message";
 import UserForm from "./components/UserForm";
@@ -17,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path={"*"} element={<NotFound />} />
         <Route path={"/"} element={<Home />} />
-        <Route path={"/about"} element={<About />} />
+        <Route path={"/glass"} element={<Glass />} />
         <Route
           path={"/userform"}
           element={<UserForm setusername={setUsername} />}

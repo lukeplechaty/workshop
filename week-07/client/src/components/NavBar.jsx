@@ -8,7 +8,7 @@ export default function NavBar(props) {
         {props.username ? (
           <Link to={`/user/${props.username}`}>Profile</Link>
         ) : null}
-        |<Link to={"/about"}>About</Link>
+        |<Link to={"/glass"}>Glass</Link>
       </nav>
     </>
   );
