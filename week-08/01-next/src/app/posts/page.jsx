@@ -22,10 +22,12 @@ export default async function Posts({ searchParams }) {
   return (
     <>
       <h1>Posts</h1>
-      <Link href={"?sort=asc"}>Sort ASC</Link>
-      <Link href={"?sort=desc"}>Sort DESC</Link>
-      <Link href={"?sort=rev"}>Sort REV</Link>
-      <Link href={"/posts"}>Sort reset</Link>
+      <nav className="flex justify-center gap-5">
+        <Link href={"?sort=asc"}>Sort ASC</Link>
+        <Link href={"?sort=desc"}>Sort DESC</Link>
+        <Link href={"?sort=rev"}>Sort REV</Link>
+        <Link href={"/posts"}>Sort reset</Link>
+      </nav>
       {posts.map((post) => (
         <Link href={`/posts/${post.id}`} key={post.id}>
           <h2>{post.title}</h2>
