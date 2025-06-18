@@ -1,4 +1,10 @@
 import Link from "next/link";
+
+export const metadata = {
+  title: "My App - Posts",
+  description: "data about posts",
+};
+
 export default async function Posts({ searchParams }) {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const posts = await res.json();
