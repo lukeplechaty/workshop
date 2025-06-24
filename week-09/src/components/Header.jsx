@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { links } from "@/utils/Links";
-import style from "@/components/Header.module.css";
 import { UserButton, SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
 export default function Header() {
   const pathname = usePathname();
@@ -12,9 +11,7 @@ export default function Header() {
         {links.map((link) => (
           <Link
             key={link.id}
-            className={`${
-              pathname === link.href ? style.selected : style.unselected
-            }`}
+            className={pathname === link.href ? "bg-orange-700" : ""}
             href={link.href}
           >
             {link.name}
