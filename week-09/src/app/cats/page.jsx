@@ -8,7 +8,7 @@ import {
 import { FaCat } from "react-icons/fa";
 import { GiCat } from "react-icons/gi";
 export default async function Cats() {
-  const query = await db.query(`SELECT * FROM cats`);
+  const query = await db.query(`SELECT * FROM cats ORDER BY id ASC`);
   const cats = query.rows;
   return (
     <>
@@ -31,6 +31,9 @@ export default async function Cats() {
           </Tooltip>
         </div>
       ))}
+      <Link href={`/cats/new`}>
+        <p>new</p>
+      </Link>
     </>
   );
 }
