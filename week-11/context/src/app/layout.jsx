@@ -1,6 +1,7 @@
 import { UserProvider } from "@/context/UserContext";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { CounterProvider } from "@/context/CounterContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +13,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <UserProvider>
         <ThemeProvider>
-          <body>{children}</body>
+          <CounterProvider>
+            <body>{children}</body>
+          </CounterProvider>
         </ThemeProvider>
       </UserProvider>
     </html>
